@@ -12,7 +12,7 @@ server.on("connection", function (socket) {
         console.log("Connection from %s closed successfully".yellow, remoteAddress);
     })
     socket.on("error", function (err) {
-        console.log("Connection %s err :  %s",remoteAddress,  err.message);
+        console.log("Connection %s err :  %s", remoteAddress, err.message);
     })
 });
 server.listen(9000, function () {
